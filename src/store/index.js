@@ -1,12 +1,8 @@
 import { createStore } from 'vuex';
+import BooksModule, { BOOKS_KEY } from './books.state';
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    [BOOKS_KEY]: BooksModule,
   },
 });
